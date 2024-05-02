@@ -8,7 +8,7 @@ export default function Card({ staffDetails }) {
             staffDetails?.image ? "h-full w-full" : "h-[75px] w-[75px]"
           } img object-cover object-top bg-no-repeat`}
           src={`${staffDetails?.image ? staffDetails.image : UserProfileImage}`}
-          alt=""
+          alt="profile"
         />
       </div>
       <div className="details flex items-center justify-start flex-col gap-1">
