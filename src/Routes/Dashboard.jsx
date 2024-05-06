@@ -27,8 +27,6 @@ export default function Dashboard() {
       };
 
       setData([...data, staff, dependants]);
-
-      console.log(res?.length);
     } catch (error) {
       console.error(error);
     }

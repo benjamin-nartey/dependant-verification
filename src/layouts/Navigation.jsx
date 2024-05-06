@@ -27,13 +27,13 @@ function Navigation() {
     <Fragment>
       <div className="absolute right-8 top-16 z-[99]">
         {toggleLogout && (
-          <button className="lg:px-4 lg:py-2 lg:z-50 lg:bg-white lg:rounded-md lg:text-base lg:font-medium lg:flex lg:items-center lg:justify-center lg:gap-2 hidden">
+          <button className="px-4 py-2 z-50 bg-white rounded-md text-base font-medium lg:flex items-center justify-center gap-2 hidden">
             <AiOutlinePoweroff size={18} /> Logout
           </button>
         )}
       </div>
-      <div className="lg:flex bg-[#f4e7ed] max-md:flex-col min-h-screen transition-height duration-75 ease-out overflow-hidden">
-        <div className="lg:flex lg:flex-initial lg:h-screen hidden">
+      <div className="flex lg:flex-row bg-[#f4e7ed] flex-col min-h-screen transition-height duration-75 ease-out overflow-hidden">
+        <div className="lg:flex flex-initial h-screen hidden">
           <Sidebar />
         </div>
         <div className="main-content-column bg-[#eaf0fd] h-screen w-full overflow-y-auto overflow-x-hidden">
@@ -50,7 +50,7 @@ function Navigation() {
                 {!hideInput && <SearchInput />}
                 <HiMenu
                   onClick={() => setToggleSidebar(true)}
-                  className="text-[25px] text-[#0E1B39] cursor-pointer lg:hidden "
+                  className="text-[25px] text-[#0E1B39] cursor-pointer lg:hidden block"
                 />
 
                 <div className="lg:block hidden">
