@@ -23,6 +23,12 @@ export default function DependantCard({ staffDetails }) {
             {staffDetails?.Relation.toLowerCase()}
           </span>
         </div>
+        <div className="flex justify-start items-center gap-4  w-full">
+          <span className="font-bold">Date of birth</span>
+          <span className="capitalize">
+            {new Date(staffDetails?.dependantdateofbirth).toLocaleDateString()}
+          </span>
+        </div>
         <div className="flex items-center justify-start gap-4 w-full">
           <span className="font-bold">Age</span>
           <span className="capitalize">
