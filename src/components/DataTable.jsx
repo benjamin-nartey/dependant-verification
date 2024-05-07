@@ -23,7 +23,7 @@ export function DataTable({ columns, data }) {
   });
 
   return (
-    <div className="rounded-md border bg-white/75 uppercase">
+    <div className="rounded-md border bg-white/75 capitalize">
       <Table>
         <TableHeader className="">
           {table.getHeaderGroups().map((headerGroup) => (

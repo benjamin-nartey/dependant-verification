@@ -31,12 +31,12 @@ export default function SearchInput() {
 
       if (res?.length) {
         const newRecentSearch = {
-          id: `${res?.[0].employeeid}`,
-          staffName: `${res?.[0].employeefirstname} ${res?.[0].employeelastname}`,
-          sex: `${res?.[0].employeegender}`,
-          position: `${res?.[0].employeeposition}`,
-          department: `${res?.[0].employeedepartment}`,
-          phone: `${res?.[0].employeephone}`,
+          id: `${res?.[0].employeeid.toLowerCase()}`,
+          staffName: `${res?.[0].employeefirstname.toLowerCase()} ${res?.[0].employeelastname.toLowerCase()}`,
+          sex: `${res?.[0].employeegender.toLowerCase()}`,
+          position: `${res?.[0].employeeposition.toLowerCase()}`,
+          department: `${res?.[0].employeedepartment.toLowerCase()}`,
+          phone: `${res?.[0].employeephone.toLowerCase()}`,
           timestamp: `${new Date().toISOString()}`,
         };
 

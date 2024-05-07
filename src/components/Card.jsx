@@ -35,6 +35,12 @@ export default function Card({ staffDetails }) {
           </span>
         </div>
         <div className="flex items-center justify-start gap-4 w-full">
+          <span className="font-bold">Contact</span>
+          <span className="capitalize">
+            {staffDetails?.employeephone.toLowerCase()}
+          </span>
+        </div>
+        <div className="flex items-center justify-start gap-4 w-full">
           <span className="font-bold">Date of employment</span>
           <span className="capitalize">
             {new Date(`${staffDetails?.employeehiredate}`).toLocaleString(
